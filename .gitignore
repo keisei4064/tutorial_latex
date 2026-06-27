@@ -1,0 +1,39 @@
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# LuaLaTeX / font cache related
+*.lua
+*.luac
+
+# latexmk
+*.latexmk
+
+# Generated PDF
+main.pdf
+
+# Temporary files
+*.tmp
+*.bak
+*~
+.DS_Store
+
+# VS Code
+# Keep .vscode/settings.json if it contains project build settings.
+# Do not ignore .vscode/ by default.

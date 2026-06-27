@@ -1,0 +1,24 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-lualatex",
+            "command": "latexmk", // コマンド本体(LaTeX のビルド補助ツール)
+            "args": [
+                "-lualatex", // 中身のコンパイラは LuaLaTeX を使う
+                "-synctex=1", // PDF と .tex ソースを対応づける
+                "-interaction=nonstopmode", // エラーが出ても対話入力待ちにならないようにする
+                "-file-line-error", // エラー表示をファイル名と行番号つきで出す
+                "%DOC%" // プレースホルダ: 現在ビルド対象になっている .tex ファイルに置き換わる
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk-lualatex",
+            "tools": [
+                "latexmk-lualatex" // ↑のやつを実行するだけ
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipe.default": "latexmk-lualatex" // ビルドボタン▶に対応付ける
+}
